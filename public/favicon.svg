@@ -1,0 +1,22 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fav-shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef011d"/>
+      <stop offset="100%" stop-color="#b30015"/>
+    </linearGradient>
+  </defs>
+  <path
+    d="M50,6 C76,6 100,28 100,60 C100,92 75,96 50,96 C25,96 0,92 0,60 C0,28 24,6 50,6 Z"
+    fill="url(#fav-shield)"
+  />
+  <text
+    x="50"
+    y="68"
+    text-anchor="middle"
+    font-family="Inter, system-ui, sans-serif"
+    font-weight="900"
+    font-size="44"
+    fill="#ffffff"
+    letter-spacing="-1"
+  >CR7</text>
+</svg>

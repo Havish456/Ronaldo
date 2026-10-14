@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <radialGradient id="lisbonGlow" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#064e3b" stop-opacity="0.25"/>
+      <stop offset="80%" stop-color="#022c22" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0a0a0a" stop-opacity="0.98"/>
+    </radialGradient>
+    <linearGradient id="stripes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.08"/>
+    </linearGradient>
+    <filter id="blurFilter">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+  
+  <!-- Deep dark base -->
+  <rect width="1920" height="1080" fill="#0a0a0a"/>
+  <rect width="1920" height="1080" fill="url(#lisbonGlow)"/>
+  
+  <!-- Sporting green pitch/stadium abstract light beams -->
+  <g opacity="0.4" filter="url(#blurFilter)">
+    <circle cx="960" cy="400" r="380" fill="#10b981" opacity="0.3"/>
+    <circle cx="300" cy="200" r="250" fill="#059669" opacity="0.25"/>
+    <circle cx="1620" cy="250" r="280" fill="#34d399" opacity="0.2"/>
+  </g>
+  
+  <!-- Sporting Lisbon Green & White Horizontal/Diagonal Hoops geometry -->
+  <g opacity="0.12">
+    <path d="M-100,200 L2020,450 L2020,550 L-100,300 Z" fill="#10b981"/>
+    <path d="M-100,450 L2020,700 L2020,800 L-100,550 Z" fill="#ffffff"/>
+    <path d="M-100,700 L2020,950 L2020,1050 L-100,800 Z" fill="#10b981"/>
+  </g>
+  
+  <!-- Large subtle watermark text -->
+  <text x="960" y="650" font-family="'Inter', sans-serif" font-weight="900" font-size="280" fill="#10b981" opacity="0.04" text-anchor="middle" letter-spacing="20">SPORTING CP</text>
+  <text x="960" y="880" font-family="'Inter', sans-serif" font-weight="900" font-size="140" fill="#ffffff" opacity="0.03" text-anchor="middle" letter-spacing="30">1985 — 2003</text>
+  
+  <!-- Vignette -->
+  <radialGradient id="vignette" cx="50%" cy="50%" r="60%">
+    <stop offset="60%" stop-color="#000000" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+</svg>
