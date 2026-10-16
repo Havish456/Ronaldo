@@ -29,7 +29,7 @@ export function Hero() {
   }
 
   return (
-    <section ref={containerRef} className="relative flex min-h-screen flex-col items-center justify-center pt-24 pb-16 text-center">
+    <section ref={containerRef} className="relative flex min-h-screen flex-col items-center justify-center pt-14 pb-10 text-center">
       {/* Ambient radial gradient */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#050505] via-[#0a0a0a]/80 to-transparent" />
 
@@ -46,7 +46,7 @@ export function Hero() {
         {/* Badge */}
         <div
           ref={badgeRef}
-          className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-5 py-1.5 text-xs font-semibold tracking-widest uppercase text-neutral-400 backdrop-blur-xl shadow-inner"
+          className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-5 py-1.5 text-xs font-semibold tracking-widest uppercase text-neutral-400 backdrop-blur-xl shadow-inner"
         >
           <span className="h-2 w-2 animate-pulse-glow rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,1,29,0.6)]" />
           The Living Legend • Career Chronicle
@@ -55,26 +55,37 @@ export function Hero() {
         {/* Main headline */}
         <h1
           ref={headlineRef}
-          className="font-heading text-style-display mb-4 text-7xl sm:text-8xl md:text-9xl font-black tracking-tighter text-white"
+          className="font-heading text-style-display mb-4 flex flex-wrap items-baseline justify-center gap-[0.15em] text-7xl font-black tracking-tighter text-white sm:text-8xl md:text-9xl leading-none"
         >
           <span className="bg-gradient-to-r from-white via-neutral-200 to-white bg-clip-text text-transparent">
             CRISTIANO
-          </span>{' '}
+          </span>
           <span className="bg-gradient-to-r from-red-500 via-red-400 to-white bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(239,1,29,0.3)]">
             RONALDO
           </span>
         </h1>
 
+        {/* CR7.jpeg background watermark — appears after the headline */}
+        <div className="relative mx-auto mb-4 max-w-3xl opacity-5">
+          <img
+            src="/images/CR7.jpeg"
+            alt=""
+            className="h-auto w-full rounded-xl object-cover grayscale"
+            aria-hidden="true"
+          />
+          <div className="absolute inset-0 rounded-xl bg-gradient-to-b from-[#030303]/90 via-transparent to-[#030303]/90" />
+        </div>
+
         <p
           ref={subheadRef}
-          className="text-style-body mx-auto mb-12 max-w-2xl text-lg sm:text-xl font-medium text-neutral-400"
+          className="text-style-body mx-auto mb-8 max-w-2xl text-lg sm:text-xl font-medium text-neutral-300"
         >
           From the streets of Funchal to the pinnacle of world football.
           Scroll through every era, victory, and record-breaking achievement.
         </p>
 
         {/* Career totals grid */}
-        <div ref={statsRef} className="mx-auto mb-12 grid max-w-4xl grid-cols-2 gap-3 sm:grid-cols-3 md:gap-4">
+        <div ref={statsRef} className="mx-auto mb-8 grid max-w-4xl grid-cols-2 gap-3 sm:grid-cols-3 md:gap-4">
           <div className="hero-stat-card group relative rounded-2xl border border-white/10 bg-[rgba(10,10,10,0.65)] p-4 sm:p-5 backdrop-blur-xl transition-all duration-300 hover:border-white/[0.25] hover:shadow-[0_0_24px_rgba(239,1,29,0.15)]">
             <span className="block font-heading text-3xl sm:text-4xl font-black text-white group-hover:text-neutral-100 transition-colors">
               {careerTotals.ballonDOr}
@@ -120,7 +131,7 @@ export function Hero() {
         </div>
 
         {/* Action Buttons & Quick Jumps */}
-        <div ref={ctaRef} className="flex flex-col items-center gap-8">
+        <div ref={ctaRef} className="flex flex-col items-center gap-6">
           <button
             onClick={scrollToTimeline}
             className="group relative inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-red-500 to-red-600 px-8 py-3.5 text-sm font-bold text-white shadow-xl shadow-red-500/20 transition-all duration-300 hover:scale-105 hover:shadow-red-500/30 focus:outline-none cursor-pointer"

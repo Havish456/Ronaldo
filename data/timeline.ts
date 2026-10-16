@@ -90,6 +90,17 @@ export const timeline: Era[] = [
           { label: 'Transfer fee', value: '£12.24m' },
         ],
       },
+      {
+        id: 'sporting-stats',
+        title: 'Sporting CP spell',
+        date: '2002-2003',
+        description:
+          'Made 31 appearances and scored 5 goals for Sporting CP, establishing himself as Portugal\'s next big thing.',
+        stats: [
+          { label: 'Apps', value: '31' },
+          { label: 'Goals', value: '5' },
+        ],
+      },
     ],
     stats: [
       { label: 'Birthplace', value: 'Funchal, Madeira' },
@@ -179,7 +190,7 @@ export const timeline: Era[] = [
     yearRange: '2009–2018',
     color: 'real-white',
     club: 'Real Madrid',
-    image: '/images/ronaldo-realmadrid.png',
+    image: '/images/gal-real.jpg',
     accentRgb: '255, 255, 255',
     description:
       'In a world-record move, the white jersey became his canvas for historic greatness.',
@@ -269,7 +280,7 @@ export const timeline: Era[] = [
     yearRange: '2003–2026',
     color: 'united-red',
     club: 'Portugal',
-    image: '/images/ronaldo-portugal.png',
+    image: '/images/gal-portugal.jpg',
     accentRgb: '220, 38, 38',
     description:
       'The red of Portugal became his second home — a journey spanning six World Cups and the triumph of a lifetime.',
@@ -387,7 +398,12 @@ export const timeline: Era[] = [
         title: 'Joins Juventus',
         date: '2018',
         description:
-          'Signed for Juventus at age 33, bringing experience to the Bianconeri.',
+          'Signed for Juventus at age 33 after his Champions League final heroics against Liverpool.',
+        stats: [
+          { label: 'Fee', value: '€100m initial' },
+          { label: 'Age', value: '33' },
+          { label: 'Contract', value: '4 years + 1 option' },
+        ],
       },
       {
         id: 'juve-stats',
@@ -412,6 +428,17 @@ export const timeline: Era[] = [
           { label: 'Italian Super Cup', value: '2' },
         ],
       },
+      {
+        id: 'ucl-final-2019',
+        title: 'Champions League final (2019)',
+        date: '2019-06-01',
+        description:
+          'Started in the 2019 Champions League final against Liverpool, though Juventus lost 2–0.',
+        stats: [
+          { label: 'Minutes played', value: '120' },
+          { label: 'Shots', value: '3' },
+        ],
+      },
     ],
     stats: [
       { label: 'Apps', value: '134' },
@@ -431,14 +458,15 @@ export const timeline: Era[] = [
     yearRange: '2021–2022',
     color: 'united-red',
     club: 'Manchester United',
-    image: '/images/ronaldo-united.png',
+    image: '/images/gal manutd hd.jpeg',
     accentRgb: '239, 1, 29',
     description:
-      'Returned to Old Trafford in a magical homecoming, rekindling the relationship that started it all.',
+      'Returned to Old Trafford in a magical homecoming, rekindling the relationship that started it all. Wore the No.7 jersey once more, scoring on his second debut in front of a thunderous home crowd.',
     keyAchievements: [
       { title: 'Dream Old Trafford Return', count: 'Brace vs Newcastle', highlight: true },
       { title: 'Premier League Player of the Month', count: '2×' },
       { title: 'Sir Matt Busby POTY Award', count: '2021-22' },
+      { title: 'Champions League Appearances', count: '100+ Career' },
     ],
     milestones: [
       {
@@ -450,6 +478,41 @@ export const timeline: Era[] = [
         stats: [
           { label: 'Debut match', value: 'vs Newcastle' },
           { label: 'Goals', value: '2' },
+        ],
+      },
+      {
+        id: 'cr7-assist-debut',
+        title: 'Assist on full debut',
+        date: '2021-09',
+        description:
+          'Come on as a substitute against Aston Villa and provided an assist, showing he still had magic left.',
+        stats: [
+          { label: 'Minutes', value: '22' },
+          { label: 'Assists', value: '1' },
+        ],
+      },
+      {
+        id: 'hat-trick-contender',
+        title: 'Hat-trick near-miss vs Atalanta',
+        date: '2021-09-28',
+        description:
+          'Put United ahead in the Champions League with a stunning long-range strike, narrowly missing a hat-trick as United lost 2–1 at home.',
+        stats: [
+          { label: 'Goal', value: '1' },
+          { label: 'Shot distance', value: '30+ yards' },
+          { label: 'Result', value: '2-1 L (UCL)' },
+        ],
+      },
+      {
+        id: 'farewell-old-trafford',
+        title: 'Emotional farewell',
+        date: '2022-11',
+        description:
+          'Scored in his final Old Trafford appearance — a penalty against Arsenal — before departing for Al-Nassr.',
+        stats: [
+          { label: 'Apps', value: '9' },
+          { label: 'Goals', value: '2' },
+          { label: 'Assists', value: '1' },
         ],
       },
     ],
@@ -486,6 +549,32 @@ export const timeline: Era[] = [
         date: '2022-12',
         description:
           'Joined Al-Nassr at the end of 2022, becoming one of the highest-paid athletes in history.',
+        stats: [
+          { label: 'Age', value: '37' },
+          { label: 'Reported salary', value: '$200m/yr' },
+        ],
+      },
+      {
+        id: 'first-goal',
+        title: 'First goal for Al-Nassr',
+        date: '2023-01',
+        description:
+          'Scored on his debut appearance, a header in the King Cup match against Al-Rummah.',
+        stats: [
+          { label: 'Method', value: 'Header' },
+          { label: 'Competition', value: 'King Cup' },
+        ],
+      },
+      {
+        id: 'golden-boots',
+        title: 'Golden Boot dominance',
+        date: '2023-2025',
+        description:
+          'Won the Saudi Pro League Golden Boot multiple times, leading the league in scoring.',
+        stats: [
+          { label: 'Golden Boots', value: 'Multiple' },
+          { label: 'Seasons', value: '2023-25' },
+        ],
       },
       {
         id: 'contract-extension',
@@ -503,7 +592,11 @@ export const timeline: Era[] = [
         title: 'Saudi Pro League title',
         date: '2025-26',
         description:
-          'Won the Saudi Pro League title in the 2025–26 season.',
+          'Won the Saudi Pro League title in the 2025–26 season, proving he could still deliver at the highest level in Asia.',
+        stats: [
+          { label: 'Apps', value: '30+' },
+          { label: 'Goals', value: '20+' },
+        ],
       },
       {
         id: '977-goals',

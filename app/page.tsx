@@ -7,6 +7,8 @@ import { Timeline } from '@/components/Timeline'
 import { Footer } from '@/components/Footer'
 import { ScrollProgress } from '@/components/ScrollProgress'
 import { BackToTop } from '@/components/BackToTop'
+import { Slideshow } from '@/components/Slideshow'
+import { Awards } from '@/components/Awards'
 
 export default function Page() {
   return (
@@ -19,6 +21,8 @@ export default function Page() {
         <Timeline />
         <Footer />
       </main>
+      <Awards />
+      <Slideshow />
       <BackToTop />
     </>
   )

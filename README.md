@@ -62,6 +62,24 @@ npm run build
 | 3D / Shaders | **React Three Fiber** + **Three.js** |
 | Fonts | **Inter** (headings/body), **Fira Code** (mono) |
 
+## 🖼️ Photo Gallery & Slideshow
+
+The site features **high-definition CR7 photos** across two placements:
+
+### Era Section Images
+Each era section displays a **featured image** below the header, styled with:
+- Era color overlay (duotone tint matching the club colors)
+- Colored border and drop-shadow matching the active era accent
+- GSAP-reveal animation (fade + slide-up on scroll)
+
+### Legend in Motion Gallery (Slideshow)
+A click-to-advance slideshow at the **bottom of the page** featuring all 7 career eras:
+
+- **Click** the front image or use arrow buttons to advance
+- **Pop animation**: Fade-out → image swap → pop-in with `back.out(1.2)` easing
+- Era color-coded caption and navigation dots
+- Shows the progression: Sporting CP → Manchester United → Real Madrid → Portugal → Juventus → Al-Nassr → return
+
 ## 📂 Project Structure
 
 ```
@@ -72,10 +90,11 @@ npm run build
 ├── components/
 │   ├── Hero.tsx            # Hero section — headline, stats, CTA, scroll cue
 │   ├── Timeline.tsx        # Scroll progress tracker + era sections
-│   ├── EraSection.tsx      # Individual era card with milestones, stats, achievements
-│   ├── EraNavBar.tsx       # Sticky era navigation bar
-│   ├── TimelineBackground.tsx  # Parallax era backgrounds with duotone overlays
+│   ├── EraSection.tsx      # Era card with featured image, milestones, stats, achievements
+│   ├── EraNavBar.tsx       # Sticky era navigation bar with CR7 logo mark
+│   ├── TimelineBackground.tsx  # Parallax era backgrounds, duotone overlays, vignette
 │   ├── DistortionBackground.tsx # WebGL shader plane (cursor + scroll reactive)
+│   ├── Slideshow.tsx       # Click-to-advance career photo gallery
 │   ├── ScrollProgress.tsx  # Top scroll progress bar
 │   ├── BackToTop.tsx       # Floating scroll-to-top button
 │   └── Footer.tsx          # Footer with CR7 logo, career totals

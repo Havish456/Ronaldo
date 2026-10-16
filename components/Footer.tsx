@@ -6,7 +6,7 @@ export function Footer() {
   const ballons = careerTotals.ballonDOrYears.join(', ')
 
   return (
-    <footer className="relative py-20">
+    <footer className="relative py-16">
       <div className="container-style mx-auto px-4">
         <div className="border-t border-white/[0.05] pt-12">
           <div className="flex flex-wrap items-center justify-between gap-4 text-sm text-neutral-500">
